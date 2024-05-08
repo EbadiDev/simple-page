@@ -28,7 +28,7 @@
         <key>PayloadDisplayName</key>
         <string>>Enable IPV6 IOS</string>
         <key>PayloadDescription</key>
-        <string>APNIPV6 @GetNetworkBot</string>
+        <string>APNIPV6 @Arch_Net</string>
         <key>AttachAPN</key>
         <dict>
           <key>Name</key>
