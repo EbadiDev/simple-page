@@ -7,11 +7,11 @@
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadIdentifier</key>
-    <string>mtn</string>
+    <string>mci</string>
     <key>PayloadUUID</key>
     <string>f9dbd18b-90ff-58c1-8605-5abae9c50691</string>
     <key>PayloadDisplayName</key>
-    <string>@Arch_Net IPV6 (MTN)</string>
+    <string>@Arch_Net IPV6 (MCI)</string>
     <key>PayloadDescription</key>
     <string>Enable IPV6 for MCI by @Arch_Net</string>
     <key>PayloadContent</key>
@@ -22,27 +22,39 @@
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadIdentifier</key>
-        <string>mtn.cellular</string>
+        <string>mci.cellular</string>
         <key>PayloadUUID</key>
         <string>beb15cbf-42fb-5809-b95a-ae109ebcdbe9</string>
         <key>PayloadDisplayName</key>
-        <string>@Arch_Net IPV6 (MTN)</string>
+        <string>@Arch_Net IPV6 (MCI)</string>
         <key>PayloadDescription</key>
         <string>APNIPV6 @Arch_Net</string>
         <key>AttachAPN</key>
         <dict>
           <key>Name</key>
-          <string>mtn</string>
+          <string>MCCI Internet</string>
           <key>AuthenticationType</key>
           <string>CHAP</string>
+          <key>Username</key>
+          <string>mcinet</string>
+          <key>Password</key>
+          <string></string>
+          <key>DefaultProtocolMask</key>
+          <integer>3</integer>
+          <key>AllowedProtocolMask</key>
+          <integer>3</integer>
         </dict>
         <key>APNs</key>
         <array>
           <dict>
             <key>Name</key>
-            <string>mtn</string>
+            <string>MCCI Internet</string>
             <key>AuthenticationType</key>
             <string>CHAP</string>
+            <key>Username</key>
+            <string>mcinet</string>
+            <key>Password</key>
+            <string></string>
             <key>DefaultProtocolMask</key>
             <integer>3</integer>
             <key>AllowedProtocolMask</key>

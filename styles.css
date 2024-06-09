@@ -74,8 +74,91 @@ body {
     }
 }
 
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Full viewport height */
+    position: relative;
+}
+
+.styled-select {
+    width: 200px; /* Set the width of the select box */
+    padding: 10px; /* Add some padding inside the select box */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Grey border */
+    font-size: 16px; /* Increase font size */
+    background-color: white; /* White background color */
+    cursor: pointer; /* Cursor pointer to indicate it's clickable */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+/* Style focus and hover states for better user experience */
+.styled-select:focus, .styled-select:hover {
+    border-color: #888; /* Darker border on focus/hover */
+    outline: none; /* Remove default focus outline */
+}
 
 
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#notification {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+}
+
+#notification.fade-in {
+    display: block;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+#notification.fade-out {
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Full viewport height for vertical centering */
+}
+
+
+.telegram-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.telegram-link a {
+    color: #0088cc; /* Telegram's brand color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0088cc;
+    display: inline-block;
+}
+
+.telegram-link a:hover {
+    background-color: #0088cc;
+    color: white;
+}
   
 .container {
     background-color: #fff;
